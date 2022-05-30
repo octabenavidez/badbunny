@@ -115,7 +115,7 @@ body{
 
 .header nav ul li:hover{
     background-color: #eedb5e;
-    transition: 1s;
+    transition: 1.2s;
 }
 
 .header nav ul li a:hover{
@@ -230,7 +230,7 @@ body{
 
 .sectionDiscografia img:hover{
     opacity: 1;
-    
+    transform: translate(0px, -10px);
 }
 
 /* Tour */

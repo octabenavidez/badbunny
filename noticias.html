@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Koulen&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
     <header class="header">
@@ -55,7 +56,7 @@
     <footer class="footer">
     <div class="footerDentro">
         <img src="imagenes/iconito.png" alt="Cara de bad-bunny icono minimalista">
-        <h4>
+        <h4 class="wow animate__animated animate__flash">
             Todos los derechos reservados.
         </h4>   
     
@@ -66,5 +67,10 @@
         </div>
     </div>
     </footer>
+
+    <script src="js/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
 </body>
 </html>
