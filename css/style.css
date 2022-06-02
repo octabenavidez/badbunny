@@ -1,316 +1,229 @@
 *{
-    margin: 0;
-    padding: 0;
-}
-
-/* Mobile */
-
-@media only screen and (max-width: 768px) {
-    .header{
-        flex-direction: column;
-        width: 768px;
-        
-    }
-    .header nav ul{
-        flex-direction: column;
-        text-align: center;
-        list-style: none;
-    }
-    .main{
-        width: 768px;
-    }
-    .footer{
-        width: 768px;
-    }
-    .imgPrincipal img{
-        width: 500px !important; 
-        height: 266px !important;
-    }
-    .sectionBio{
-        display: flex !important;
-        flex-direction: column !important;
-    }
-    .sectionBio_img{
-        text-align: center;
-    }
-    .sectionBio_tabla{
-        align-self: center;
-    }
-    .sectionTour{
-        flex-direction: column;
-        align-items: flex-start !important;
-    }
-    .fecha{
-        display: none;
-    }
-    .sectionTour ul{
-        margin: 10px;
-    }
-    .sectionDiscografia{
-        flex-direction: column;
-        align-items: center;
-    }
-    form label{
-        display: block;
-        margin-bottom: 5px;
-        font-size: 15px;
-        padding: 5px ;
-    }
-}
-
-body{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, auto);
-    grid-template-areas: 
-    "header"
-    "main"
-    "footer";
+    box-sizing: border-box;
 }
 
 /* Inicio del Header */
 
-.header{
-    border-bottom: 1px solid #6b66b6;
-    grid-area: header;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+header{
     background-color: #f12726;
-    position: sticky;
-    top: 0;
-    z-index: 1;
+    border-bottom: 1px solid #6b66b6;
 }
 
-.header img{
-    height: 110px;
-    width: 190px;
-}
-
-.header nav{
-    display: block;
-}
-
-.header nav ul{
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
-}
-
-.header nav ul li{
-    padding: 5px ;
+header nav ul li{
+    padding: 3px 22px;
     margin: 5px;
     background-color: #53a745;
-    border-radius: 6%;
+    border-radius: 5px;
 }
 
-.header nav ul li a{
-    padding: 20px;
-    text-decoration: none;
-    font-family: 'Open Sans', sans-serif;
+header nav ul a{
     text-transform: uppercase;
-    font-weight: bold;
-    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold !important;
+    color: white !important;
+    text-decoration: none;
 }
 
-.header nav ul li:hover{
-    background-color: #eedb5e;
-    transition: 1.2s;
+header nav ul li:hover{
+    background-color: #eedb5e !important;
+    transition: 1s !important;
 }
 
-.header nav ul li a:hover{
-    color: #4b9945;
+header nav ul li:hover a{
+    color: #4b9945 !important;
 }
 
-/* Fin del header */
+.navbar-brand{
+    padding: 0 !important;
+    margin: 0 !important; 
+}
+/* Fin del Header */
 
-/* Inicio del main */
-.main{
+/* Inicio del Main */
+
+main{
     background-image: url(https://worldshottesttour.com/static/df7ee17193510a2cca3f53186f00fe95/ccdb5/BB_BG_2400x3000.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; 
-    grid-area: main;
 }
 
-.imgPrincipal{
-    display: flex;
-    justify-content: center;
-}
-
-.imgPrincipal img{
+#imagenPrincipal img{
     width: 860px;
-    height: 429px;
-    z-index: 0;
 }
 
-.sectionBio{
+#info .container{
     background-color: #f5d020;
     background-image: linear-gradient(315deg, #f5d020 0%, #f55c03 74%);
-    margin: 25px;
-    padding: 10px;
-    border-radius: 3%;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    justify-items: end;
-}
-
-.sectionBio_info h1{
-    font-family: 'Fjalla One', sans-serif;
-    font-size: 30px;
-    margin-left: 20px;
-    color:   #2d2722;
-}
-
-.sectionBio_info p{
-    margin: 10px 20px;
+    border-radius: 15px;
     font-family: 'Open Sans', sans-serif;
-    font-style: italic;
+    color:#473f49;
+}
+
+#info .container img{
+    width: 550px;
+}
+
+#info .container p{
     line-height: 1.5;
 }
 
-.sectionBio_img img{
-    width: 350px;
-    height: 200px;
-    border-radius: 3%;
-    grid-area: imagen;
-}
-
-
-.sectionBio_tabla table{
-    font-family: 'Open Sans', sans-serif;
-    font-weight: bold;
-}
-
-/* Fin del Main */
+/* Fin del main */
 
 /* Inicio del Footer */
 
-.footer{
+footer{
     background-color: #473f49;
     color:  #e1d9ee ;
-    grid-area: footer;
     font-family: 'Open Sans', sans-serif;
-    font-size: 15px;
 }
 
-.footerDentro{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+footer h4{
+    margin: 0;
 }
 
-.footerDentro img{
+.imagenPrincipal-footer img{
     width: 50px;
 }
 
-.footerDentro a img{
+.imagenSecundaria-footer img{
     width: 30px;
     height: 30px;
     opacity: .3;
 }
 
-.footerDentro a img:hover{
+.imagenSecundaria-footer img:hover{
     opacity: 1;
 }
 
 /* Fin del Footer */
 
-/* Discografia */
+/* HTML Discografia */
 
-.sectionDiscografia{
-    display: flex;
-    justify-content: center;
+#discos img{
+    opacity: 0.7;
 }
 
-.sectionDiscografia img{
-    margin: 6px;
-    opacity: 0.6;
-}
-
-.sectionDiscografia img:hover{
+#discos img:hover{
     opacity: 1;
     transform: translate(0px, -10px);
 }
 
-/* Tour */
+/* Fin de HTML Discografia */
 
-.sectionTour{
+/* HTML Tour */
+
+#tour table{
+    border: #f30e07;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#tour table .city{
+    color: #f30e07;
+}
+
+#tour table .sale a{
+    background-color: #4b9945;
+    text-decoration: none;
+    color: white;
+    padding: 5px 20px;
+    font-family: "Open Sans", sans-serif;
+    letter-spacing: 1px;
+    transition: 0.7s;
+}
+
+#tour table .sale a:hover{
+    background-color: #eedb5e;
+    color: #4b9945;
+}
+
+/* Fin HTML Tour */
+
+/* HTML Noticias */
+
+#noticias .card{
     background-color: #f5d020;
     background-image: linear-gradient(315deg, #f5d020 0%, #f55c03 74%);
-    margin: 56.5px;
-    padding: 10px;
-    border-radius: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    box-shadow: 10px 5px 15px;
+    font-family: Montserrat;
+    color:#473f49;
 }
 
-.sectionTour h1{
-    font-family: 'Fjalla One', sans-serif;
-    text-transform: uppercase;
-    text-decoration: underline;
+/* Fin HTML Noticias */
+
+/* HTML Form*/
+
+#form .contenedor{
+    max-width: 520px;
+    margin: 0 auto;
 }
 
-.sectionTour ul{
-    list-style-type: none;    
-    font-family: 'Open Sans', sans-serif;
-}
-
-
-/* Noticias */
-
-.tituloNoticias{
-    text-align: center;
-    text-transform: uppercase;
-    font-family: 'Fjalla One', sans-serif;
-    font-style: italic;   
-}
-
-.sectionNoticias{
-    background-color: #f5d020;
-    background-image: linear-gradient(315deg, #f5d020 0%, #f55c03 74%);
-    margin: 25px;
-    padding: 10px;
-    border-radius: 10px;
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    grid-template-rows: auto;
-    gap: 10px;
-}
-
-.sectionNoticias_info{
-    font-family: 'Open Sans', sans-serif;
-    font-weight: bold;
-    margin: 10px;
-}
-
-.sectionNoticias img{
-    width: 300px;
-    height: 160px;
-    border-radius: 3%;
-    align-self: center;
-}
-
-/* Form */
-.formulario{
-    display: flex;
-    justify-content: center;
-}
-
-fieldset {
-    width: 80% ;
-    text-align: center;
-    margin-bottom: 10px;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 15px;
-    padding: 10px ;
-}
-
-fieldset legend{
-    font-family: 'Fjalla One', sans-serif;
-    font-weight: bold;
+#form {
+    font-family: Montserrat;
 }
 
 
+/* Fin HTML Form */
 
+/* Responsive */
+
+@media only screen and (max-width: 728px){
+    header .container-fluid{
+        flex-direction: column;
+    }
+    header nav ul{
+        flex-direction: column;
+        text-align: center;
+    }
+    #tour table .sale{
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+    #tour table .sale a{
+        padding: 5px 70px;
+    }
+    #tour table thead{
+        display: none;
+    }
+    #tour table tr{
+        display: flex;
+        flex-direction: column;
+        border-bottom: red solid 3px!important;
+    }
+    #tour table{
+        border: none;
+        font-weight: bold;
+    }
+    #tour table td{
+        border: none;
+    }
+}
+
+@media only screen and (max-width: 990px){
+    #MenuNavegacion{
+        text-align: center;
+    }
+    .container-fluid{
+        width: 50% !important;
+        margin: 0 auto !important;
+    }
+    #noticias img{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media only screen and (min-width: 990px){
+    #noticias img{
+        height: 200px;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    #noticias img{
+        height: 170px;
+    }
+}
+
+/* Responsive */

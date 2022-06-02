@@ -8,73 +8,175 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Koulen&family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
-<body>
-    <header class="header">
-        <img src="imagenes/descarga-removebg-preview.png" alt="Logo BadBunny">
-        <nav>
-            <ul>
-                <li> <a href="index.html">Inicio</a> </li>
-                <li> <a href="tour.html">Tour</a> </li>
-                <li> <a href="noticias.html">Noticias</a> </li>
-                <li> <a href="discografia.html">Discografia</a> </li>
-                <li> <a href="form.html">Contacto</a> </li>
-            </ul>
+<body> 
+    <header class="sticky-lg-top">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <a href="#" class="navbar-brand"><img src="imagenes/descarga-removebg-preview.png" alt="Logo BadBunny" width="190px" height="110px"></a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#MenuNavegacion">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="MenuNavegacion" class="collapse navbar-collapse justify-content-end">
+              <ul class="navbar-nav ">
+                <li class="nav-item"> <a class="nav-link" href="index.html">Inicio</a> </li>
+                <li class="nav-item"> <a class="nav-link" href="tour.html">Tour</a> </li>
+                <li class="nav-item"> <a class="nav-link" href="noticias.html">Noticias</a> </li>
+                <li class="nav-item"> <a class="nav-link" href="discografia.html">Discografia</a> </li>
+                <li class="nav-item"> <a class="nav-link" href="form.html">Contacto</a> </li>
+              </ul>
+            </div>
+          </div>
         </nav>
     </header>
-    <main class="main">
-        <div class="imgPrincipal">
-            <img src="https://worldshottesttour.com/static/0158a4c798041d8e862deb71db6aa0cd/9d946/BB_Header.webp" alt="Imagen del Tour de Bad Bunny">
-        </div>
-        <section class="sectionTour">
-            <h1>World's Hottest Tour</h1>
-            <ul class="fecha">
-                <li> 📅 FECHA: </li>
-                <li> 🌆 CIUDAD: </li>
-                <li> 🏟 LUGAR: </li>
-            </ul>
-            <ul>
-                <li> AUG 05 ✔</li>
-                <li> ORLANDO, FL</li>
-                <li> CAMPING WORLD STADIUM</li>
-            </ul>
-            <ul>
-                <li> AUG 09 ✔</li>
-                <li> ATLANTA, GA</li>
-                <li> TRUIST PARK</li>
-            </ul>
-            <ul>
-                <li> AUG 12 ✔</li>
-                <li> MIAMI, FL</li>
-                <li> 	HARD ROCK STADIUM</li>
-            </ul>
-            <ul>
-                <li> AUG 13 ✔</li>
-                <li> MIAMI, FL</li>
-                <li> 	HARD ROCK STADIUM</li>
-            </ul>
+
+    <main class="p-3">
+        <section id="imagenPrincipal">
+            <div class="text-center container-xxl">
+                <img src="https://worldshottesttour.com/static/0158a4c798041d8e862deb71db6aa0cd/9d946/BB_Header.webp" class="img-fluid" alt="Logo del Tour de Bad Bunny">
+            </div>
+        </section>
+        <section id="tour" class="container mt-3">
+            <table class="table rounded-3 text-center">
+                <thead>
+                  <tr>
+                    <th scope="col">FECHA:</th>
+                    <th scope="col" class="city">CIUDAD:</th>
+                    <th scope="col">LUGAR:</th>
+                    <th>🔥</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>AUG 05 ✔</td>
+                    <td class="city">ORLANDO, FL</td>
+                    <td>CAMPING WORLD STADIUM</td>
+                    <td class="sale"><a href="">EN VENTA!</a></td>
+                  </tr>
+                  <tr>
+                    <td>AUG 09 ✔</td>
+                    <td class="city">ATLANTA, GA</td>
+                    <td>TRUIST PARK</td>
+                    <td class="sale"><a href="">EN VENTA!</a></td>
+                  </tr>
+                  <tr>
+                    <td>AUG 12 ✔</td>
+                    <td class="city">MIAMI, FL</td>
+                    <td>HARD ROCK STADIUM</td>
+                    <td class="sale"><a href="">EN VENTA!</a></td>
+                  </tr>
+                  <tr>
+                    <td>AUG 13 ✔</td>
+                    <td class="city">MIAMI, FL</td>
+                    <td>HARD ROCK STADIUM</td>
+                    <td class="sale"><a href="">EN VENTA!</a></td>
+                  </tr>
+                  <tr>
+                    <td>AUG 18 ✔</td>
+                    <td class="city">BOSTON, MA</td>
+                    <td>FENWAY PARK</td>
+                    <td class="sale"><a href="">EN VENTA!</a></td>
+                  </tr>
+                  <tr>
+                    <td>AUG 20 ✔</td>
+                    <td class="city">CHICAGO, IL</td>
+                    <td>SOLDIER FIELD</td>
+                    <td class="sale"><a href="">EN VENTA!</a></td>
+                  </tr>
+                  <tr>
+                    <td>AUG 23 ✔</td>
+                    <td class="city">WASHINGTON, DC</td>
+                    <td>NATIONALS PARK</td>
+                    <td class="sale"><a href="">EN VENTA!</a></td>
+                  </tr>
+                  <tr>
+                    <td>AUG 27 ✔</td>
+                    <td class="city">NEW YORK, NY</td>
+                    <td>YANKEE STADIUM</td>
+                    <td class="sale"><a href="">EN VENTA!</a></td>
+                  </tr>
+                  <tr>
+                    <td>AUG 28 ✔</td>
+                    <td class="city">NEW YORK, NY</td>
+                    <td>YANKEE STADIUM</td>
+                    <td class="sale"><a href="">EN VENTA!</a></td>
+                  </tr>
+                  <tr>
+                    <td>SEPT 01 ✔</td>
+                    <td class="city">HOUSTON, TX</td>
+                    <td>MINUTE MAID PARK</td>
+                    <td class="sale"><a href="">EN VENTA!</a></td>
+                  </tr>
+                  <tr>
+                    <td>SEPT 02 ✔</td>
+                    <td class="city">HOUSTON, TX</td>
+                    <td>MINUTE MAID PARK</td>
+                    <td class="sale"><a href="">EN VENTA!</a></td>
+                  </tr>
+                  <tr>
+                    <td>SEPT 07 ✔</td>
+                    <td class="city">SAN ANTONIO, TX</td>
+                    <td>ALAMODOME</td>
+                    <td class="sale"><a href="">EN VENTA!</a></td>
+                  </tr>
+                  <tr>
+                    <td>SEPT 09 ✔</td>
+                    <td class="city">DALLAS, TX</td>
+                    <td>AT&T STADIUM</td>
+                    <td class="sale"><a href="">EN VENTA!</a></td>
+                  </tr>
+                  <tr>
+                    <td>SEPT 14 ✔</td>
+                    <td class="city">OAKLAND, CA</td>
+                    <td>RINGCENTRAL COLISEUM</td>
+                    <td class="sale"><a href="">EN VENTA!</a></td>
+                  </tr>
+                  <tr>
+                    <td>SEPT 17 ✔</td>
+                    <td class="city">SAN DIEGO, CA</td>
+                    <td>PETCO PARK</td>
+                    <td class="sale"><a href="">EN VENTA!</a></td>
+                  </tr>
+                  <tr>
+                    <td>SEPT 18 ✔</td>
+                    <td class="city">SAN DIEGO, CA</td>
+                    <td>PETCO PARK</td>
+                    <td class="sale"><a href="">EN VENTA!</a></td>
+                  </tr>
+                </tbody>
+              </table>
         </section>
     </main>
-    <footer class="footer">
-        <div class="footerDentro">
-            <img src="imagenes/iconito.png" alt="Cara de bad-bunny icono minimalista">
-            <h4 class="wow animate__animated animate__flash">
-                Todos los derechos reservados.
-            </h4>   
+
+    <footer>
+        <div class="d-flex justify-content-between align-items-center mx-1">
+            <div class="imagenPrincipal-footer">
+                <img src="imagenes/iconito.png" alt="Cara de bad-bunny icono minimalista">
+            </div>
+
+           <div>
+                <h4 class="fs-6 wow animate__animated animate__pulse">
+                    Todos los derechos reservados.
+                </h4>   
+           </div>
         
-            <div>
+            <div class="imagenSecundaria-footer">
                 <a href="https://www.instagram.com/badbunnypr/" target="_blank"><img src="redes/instagram.png" alt="Instagram"></a>
                 <a href="https://www.youtube.com/channel/UCmBA_wu8xGg1OfOkfW13Q0Q" target="_blank"><img src="redes/youtube.png" alt="Youtube"></a>
                 <a href="https://twitter.com/sanbenito?lang=es" target="_blank"><img src="redes/gorjeo.png" alt="Twitter"></a>
             </div>
         </div>
     </footer>
-
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
     <script src="js/wow.min.js"></script>
     <script>
     new WOW().init();
     </script>
 </body>
 </html>
+
