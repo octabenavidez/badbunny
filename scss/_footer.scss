@@ -1,0 +1,24 @@
+
+/* Inicio del Footer */
+
+footer{
+    background-color: $footerColorFondo;
+    color: $footerColorLetra;
+    font-family: 'Open Sans', sans-serif;
+    h4{
+        margin: 0;
+    }
+    .imagenPrincipal-footer img{
+        width: 50px;
+    }
+    .imagenSecundaria-footer img{
+        width: 30px;
+        height: 30px;
+        opacity: .3;
+        &:hover{
+            opacity: 1;
+        }
+    }
+}
+
+/* Fin del Footer */
