@@ -1,0 +1,5 @@
+-Agregue keywords y descriptions independientes a cada HTML
+-Verifique que no haya un exceso de etiquetas de encabezado
+-Modifique los titulos de cada HTML
+-Añadi un mixin para poder manipular un background-color y un color en conjunto, el cual aplique en mi footer y en la seccion de Tour
+-Añadi un extend de dos propiedades de mi footer para darle mas estilo a mi formulario de contacto

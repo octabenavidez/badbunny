@@ -2,8 +2,7 @@
 /* Inicio del Footer */
 
 footer{
-    background-color: $footerColorFondo;
-    color: $footerColorLetra;
+    @include fondo-letra ($footerColorFondo, $footerColorLetra);
     font-family: 'Open Sans', sans-serif;
     h4{
         margin: 0;

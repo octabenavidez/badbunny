@@ -2,11 +2,15 @@
     box-sizing: border-box;
 }
 
+@mixin fondo-letra ($background, $letra){
+    background-color: ($background);
+    color: ($letra);
+}
+
 @import "variables";
 @import "header";
 @import "main";
 @import "footer";
-
 
 /* HTML Discografia */
 
@@ -34,9 +38,8 @@
 }
 
 #tour table .sale a{
-    background-color: #4b9945;
+    @include fondo-letra (#4b9945, white);
     text-decoration: none;
-    color: white;
     padding: 5px 20px;
     font-family: "Open Sans", sans-serif;
     letter-spacing: 1px;
@@ -44,8 +47,7 @@
 }
 
 #tour table .sale a:hover{
-    background-color: #eedb5e;
-    color: #4b9945;
+    @include fondo-letra (#eedb5e, #4b9945);
 }
 
 /* Fin HTML Tour */
@@ -53,11 +55,9 @@
 /* HTML Noticias */
 
 #noticias .card{
-    background-color: #f5d020;
-    background-image: linear-gradient(315deg, #f5d020 0%, #f55c03 74%);
+    background-image: $gradiente;
     box-shadow: 10px 5px 15px;
     font-family: Montserrat;
-    color:#473f49;
 }
 
 /* Fin HTML Noticias */
@@ -67,12 +67,15 @@
 #form .contenedor{
     max-width: 520px;
     margin: 0 auto;
+    padding: 10px;
+    border-radius: 10px;
+    background-image: $gradiente;
+    @extend footer;
 }
 
 #form {
     font-family: Montserrat;
 }
-
 
 /* Fin HTML Form */
 

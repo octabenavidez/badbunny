@@ -54,7 +54,6 @@ main #info .container {
   background-image: linear-gradient(315deg, #f5d020 0%, #f55c03 74%);
   border-radius: 15px;
   font-family: 'Open Sans', sans-serif;
-  color: #473f49;
 }
 
 main #info .container img {
@@ -67,27 +66,27 @@ main #info .container p {
 
 /* Fin del main */
 /* Inicio del Footer */
-footer {
+footer, #form .contenedor {
   background-color: #473f49;
   color: #e1d9ee;
   font-family: 'Open Sans', sans-serif;
 }
 
-footer h4 {
+footer h4, #form .contenedor h4 {
   margin: 0;
 }
 
-footer .imagenPrincipal-footer img {
+footer .imagenPrincipal-footer img, #form .contenedor .imagenPrincipal-footer img {
   width: 50px;
 }
 
-footer .imagenSecundaria-footer img {
+footer .imagenSecundaria-footer img, #form .contenedor .imagenSecundaria-footer img {
   width: 30px;
   height: 30px;
   opacity: .3;
 }
 
-footer .imagenSecundaria-footer img:hover {
+footer .imagenSecundaria-footer img:hover, #form .contenedor .imagenSecundaria-footer img:hover {
   opacity: 1;
 }
 
@@ -116,8 +115,8 @@ footer .imagenSecundaria-footer img:hover {
 
 #tour table .sale a {
   background-color: #4b9945;
-  text-decoration: none;
   color: white;
+  text-decoration: none;
   padding: 5px 20px;
   font-family: "Open Sans", sans-serif;
   letter-spacing: 1px;
@@ -132,11 +131,9 @@ footer .imagenSecundaria-footer img:hover {
 /* Fin HTML Tour */
 /* HTML Noticias */
 #noticias .card {
-  background-color: #f5d020;
   background-image: linear-gradient(315deg, #f5d020 0%, #f55c03 74%);
   box-shadow: 10px 5px 15px;
   font-family: Montserrat;
-  color: #473f49;
 }
 
 /* Fin HTML Noticias */
@@ -144,6 +141,9 @@ footer .imagenSecundaria-footer img:hover {
 #form .contenedor {
   max-width: 520px;
   margin: 0 auto;
+  padding: 10px;
+  border-radius: 10px;
+  background-image: linear-gradient(315deg, #f5d020 0%, #f55c03 74%);
 }
 
 #form {
