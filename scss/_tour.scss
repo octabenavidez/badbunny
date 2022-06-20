@@ -1,0 +1,26 @@
+/* HTML Tour */
+
+#tour table{
+    border: #f30e07;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#tour table .city{
+    color: #f30e07;
+}
+
+#tour table .sale a{
+    @include fondo-letra (#4b9945, white);
+    text-decoration: none;
+    padding: 5px 20px;
+    font-family: "Open Sans", sans-serif;
+    letter-spacing: 1px;
+    transition: 0.7s;
+}
+
+#tour table .sale a:hover{
+    @include fondo-letra (#eedb5e, #4b9945);
+}
+
+/* Fin HTML Tour */

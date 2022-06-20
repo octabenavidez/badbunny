@@ -1,0 +1,12 @@
+/* HTML Discografia */
+
+#discos img{
+    width: 225px;
+    opacity: 0.7;
+    &:hover{
+        opacity: 1;
+        transform: translate(0px, -10px);
+    }
+}
+
+/* Fin de HTML Discografia */

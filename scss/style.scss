@@ -11,128 +11,16 @@
 @import "header";
 @import "main";
 @import "footer";
+@import "discografia"; 
+@import "tour";
+@import "noticias";
+@import "form";
+@import "responsive";
 
-/* HTML Discografia */
 
-#discos img{
-    opacity: 0.7;
-}
 
-#discos img:hover{
-    opacity: 1;
-    transform: translate(0px, -10px);
-}
 
-/* Fin de HTML Discografia */
 
-/* HTML Tour */
 
-#tour table{
-    border: #f30e07;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-}
 
-#tour table .city{
-    color: #f30e07;
-}
 
-#tour table .sale a{
-    @include fondo-letra (#4b9945, white);
-    text-decoration: none;
-    padding: 5px 20px;
-    font-family: "Open Sans", sans-serif;
-    letter-spacing: 1px;
-    transition: 0.7s;
-}
-
-#tour table .sale a:hover{
-    @include fondo-letra (#eedb5e, #4b9945);
-}
-
-/* Fin HTML Tour */
-
-/* HTML Noticias */
-
-#noticias .card{
-    background-image: $gradiente;
-    box-shadow: 10px 5px 15px;
-    font-family: Montserrat;
-}
-
-/* Fin HTML Noticias */
-
-/* HTML Form*/
-
-#form .contenedor{
-    max-width: 520px;
-    margin: 0 auto;
-    padding: 10px;
-    border-radius: 10px;
-    background-image: $gradiente;
-    @extend footer;
-}
-
-#form {
-    font-family: Montserrat;
-}
-
-/* Fin HTML Form */
-
-/* Responsive */
-
-@media only screen and (max-width: 728px){
-    header .container-fluid{
-        flex-direction: column;
-    }
-    header nav ul{
-        flex-direction: column;
-        text-align: center;
-    }
-    #tour table .sale{
-        border-radius: 10px;
-        margin-bottom: 10px;
-    }
-    #tour table .sale a{
-        padding: 5px 70px;
-    }
-    #tour table thead{
-        display: none;
-    }
-    #tour table tr{
-        display: flex;
-        flex-direction: column;
-        border-bottom: red solid 3px!important;
-    }
-    #tour table td{
-        border: none;
-    }
-}
-
-@media only screen and (max-width: 990px){
-    #MenuNavegacion{
-        text-align: center;
-    }
-    .container-fluid{
-        width: 50% !important;
-        margin: 0 auto !important;
-    }
-    #noticias img{
-        width: 100%;
-        height: 100%;
-    }
-}
-
-@media only screen and (min-width: 990px){
-    #noticias img{
-        height: 200px;
-    }
-}
-
-@media only screen and (min-width: 1200px){
-    #noticias img{
-        height: 170px;
-    }
-}
-
-/* Responsive */
