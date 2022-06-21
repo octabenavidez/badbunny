@@ -8,6 +8,11 @@ header {
   border-bottom: 1px solid #6b66b6;
 }
 
+header nav .navbar-brand {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
 header nav ul li {
   padding: 3px 22px;
   margin: 5px;
@@ -30,11 +35,6 @@ header nav ul a {
   font-weight: bold !important;
   color: white !important;
   text-decoration: none;
-}
-
-.navbar-brand {
-  padding: 0 !important;
-  margin: 0 !important;
 }
 
 /* Fin del Header */
@@ -110,11 +110,11 @@ footer .imagenSecundaria-footer img:hover, #form .contenedor .imagenSecundaria-f
   font-family: Arial, Helvetica, sans-serif;
 }
 
-#tour table .city {
+#tour table .table--city {
   color: #f30e07;
 }
 
-#tour table .sale a {
+#tour table .table--sale a {
   background-color: #4b9945;
   color: white;
   text-decoration: none;
@@ -124,7 +124,7 @@ footer .imagenSecundaria-footer img:hover, #form .contenedor .imagenSecundaria-f
   transition: 0.7s;
 }
 
-#tour table .sale a:hover {
+#tour table .table--sale a:hover {
   background-color: #eedb5e;
   color: #4b9945;
 }
@@ -139,16 +139,16 @@ footer .imagenSecundaria-footer img:hover, #form .contenedor .imagenSecundaria-f
 
 /* Fin HTML Noticias */
 /* HTML Form*/
+#form {
+  font-family: Montserrat;
+}
+
 #form .contenedor {
   max-width: 520px;
   margin: 0 auto;
   padding: 10px;
   border-radius: 10px;
   background-image: linear-gradient(315deg, #f5d020 0%, #f55c03 74%);
-}
-
-#form {
-  font-family: Montserrat;
 }
 
 /* Fin HTML Form */

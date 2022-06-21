@@ -3,33 +3,34 @@
 header{
     background-color: $colorFondoHead;
     border-bottom: $bordeHead;
-    nav ul{
-        li{
-        padding: 3px 22px;
-        margin: 5px;
-        background-color: $colorFondoLi;
-        border-radius: 5px;
-        &:hover{
-            background-color: $colorFondoLiHover;
-            transition: 1s;  
+    nav{
+        .navbar-brand{
+            padding: 0 !important;
+            margin: 0 !important; 
         }
-        &:hover a{
-            color: $colorLihover-a !important;
-        }
-        }
-        a{
-            text-transform: uppercase;
-            font-family: 'Open Sans', sans-serif;
-            font-weight: bold !important;
-            color: white !important;
-            text-decoration: none;
+        ul{
+            li{
+            padding: 3px 22px;
+            margin: 5px;
+            background-color: $colorFondoLi;
+            border-radius: 5px;
+            &:hover{
+                background-color: $colorFondoLiHover;
+                transition: 1s;  
+            }
+            &:hover a{
+                color: $colorLihover-a !important;
+            }
+            }
+            a{
+                text-transform: uppercase;
+                font-family: 'Open Sans', sans-serif;
+                font-weight: bold !important;
+                color: white !important;
+                text-decoration: none;
+            }
         }
     }
-}
-
-.navbar-brand{
-    padding: 0 !important;
-    margin: 0 !important; 
 }
 
 /* Fin del Header */
