@@ -8,11 +8,6 @@ header {
   border-bottom: 1px solid #6b66b6;
 }
 
-header nav .navbar-brand {
-  padding: 0 !important;
-  margin: 0 !important;
-}
-
 header nav ul li {
   padding: 3px 22px;
   margin: 5px;
@@ -191,6 +186,9 @@ footer .imagenSecundaria-footer img:hover, #form .contenedor .imagenSecundaria-f
   footer div, #form .contenedor div {
     flex-direction: column;
     padding: 5px;
+  }
+  #form .form-check input {
+    margin: 0;
   }
 }
 

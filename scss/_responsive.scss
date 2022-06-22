@@ -47,6 +47,13 @@
             padding: 5px;
         }
     }
+	#form{
+		.form-check{
+			input{
+				margin: 0;
+			}
+		}
+	}
 }
 
 /* Responsive */
