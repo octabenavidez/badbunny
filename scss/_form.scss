@@ -1,14 +1,11 @@
 /* HTML Form*/
 
 #form {
-    font-family: Montserrat;
+    font-family: 'Open Sans', sans-serif;
 	.contenedor {
 		max-width: 520px;
 		margin: 0 auto;
-		padding: 10px;
-		border-radius: 10px;
 		background-image: $gradiente;
-        @extend footer;
 	}
 }
 

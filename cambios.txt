@@ -1,9 +1,0 @@
--Agregue keywords y descriptions independientes a cada HTML, en cada uno detalle una descripcion sobre el contenido principal de la página como en el caso de mi index en el cual puse: "Página fan dedicada a Bad bunny y su ultimo tour con su biografia basica y mas informacion." acompañado tambien por keywords como: "BAD BUNNY, BAD BUNNY INFO, BAD BUNNY PÁGINA, BAD BUNNY BIOGRAFIA".
-
--Verifique que no haya un exceso de etiquetas de encabezado, cuento con algunos h1 ("En index: Biografia Breve") y h5 (En la seccion Noticias: "Bad Bunny se une a Marvel", etc) entre otros. 
-
--Modifique los titulos de cada HTML para poder optimizar mi página, un ejemplo es el HTML Tour "Fechas del WORLD'S TOUR de Bad Bunny".
-
--Añadi un mixin para poder manipular un background-color y un color en conjunto, el cual aplique en mi footer y en la seccion de Tour.
-
--Añadi un extend de dos propiedades de mi footer para darle mas estilo a mi formulario de contacto.

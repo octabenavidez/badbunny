@@ -13,6 +13,7 @@ header nav ul li {
   margin: 5px;
   background-color: #53a745;
   border-radius: 5px;
+  box-shadow: 3px 3px 1px;
 }
 
 header nav ul li:hover {
@@ -61,27 +62,27 @@ main #info .container p {
 
 /* Fin del main */
 /* Inicio del Footer */
-footer, #form .contenedor {
+footer {
   background-color: #473f49;
   color: #e1d9ee;
   font-family: 'Open Sans', sans-serif;
 }
 
-footer h4, #form .contenedor h4 {
+footer h4 {
   margin: 0;
 }
 
-footer .imagenPrincipal-footer img, #form .contenedor .imagenPrincipal-footer img {
+footer .imagenPrincipal-footer img {
   width: 50px;
 }
 
-footer .imagenSecundaria-footer img, #form .contenedor .imagenSecundaria-footer img {
+footer .imagenSecundaria-footer img {
   width: 30px;
   height: 30px;
   opacity: .3;
 }
 
-footer .imagenSecundaria-footer img:hover, #form .contenedor .imagenSecundaria-footer img:hover {
+footer .imagenSecundaria-footer img:hover {
   opacity: 1;
 }
 
@@ -135,14 +136,12 @@ footer .imagenSecundaria-footer img:hover, #form .contenedor .imagenSecundaria-f
 /* Fin HTML Noticias */
 /* HTML Form*/
 #form {
-  font-family: Montserrat;
+  font-family: 'Open Sans', sans-serif;
 }
 
 #form .contenedor {
   max-width: 520px;
   margin: 0 auto;
-  padding: 10px;
-  border-radius: 10px;
   background-image: linear-gradient(315deg, #f5d020 0%, #f55c03 74%);
 }
 
@@ -183,9 +182,12 @@ footer .imagenSecundaria-footer img:hover, #form .contenedor .imagenSecundaria-f
 }
 
 @media only screen and (max-width: 480px) {
-  footer div, #form .contenedor div {
+  footer div {
     flex-direction: column;
     padding: 5px;
+  }
+  #form .form-check {
+    padding: 0;
   }
   #form .form-check input {
     margin: 0;

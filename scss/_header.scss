@@ -10,6 +10,7 @@ header{
             margin: 5px;
             background-color: $colorFondoLi;
             border-radius: 5px;
+            box-shadow: 3px 3px 1px;
             &:hover{
                 background-color: $colorFondoLiHover;
                 transition: 1s;  
