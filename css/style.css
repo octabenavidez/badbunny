@@ -7,7 +7,6 @@ header {
   background-color: #f12726;
   border-bottom: 1px solid #6b66b6;
 }
-
 header nav ul li {
   padding: 3px 22px;
   margin: 5px;
@@ -15,19 +14,16 @@ header nav ul li {
   border-radius: 5px;
   box-shadow: 3px 3px 1px;
 }
-
 header nav ul li:hover {
   background-color: #eedb5e;
   transition: 1s;
 }
-
 header nav ul li:hover a {
   color: #4b9945 !important;
 }
-
 header nav ul a {
   text-transform: uppercase;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: bold !important;
   color: white !important;
   text-decoration: none;
@@ -36,26 +32,24 @@ header nav ul a {
 /* Fin del Header */
 /* Inicio del Main */
 main {
-  background-image: url(https://worldshottesttour.com/static/df7ee17193510a2cca3f53186f00fe95/ccdb5/BB_BG_2400x3000.webp);
+  background-image: url(https://revistasolsticio.com/wp-content/uploads/2022/02/bad_bunny_llega_al_estadio_olimpico_con_worldas_hottest_tour_-1.jpg);
   background-position: center;
   background-repeat: no-repeat;
+  object-fit: cover;
   background-size: cover;
+  min-height: 30rem;
 }
-
 main #imagenPrincipal img {
   width: 860px;
 }
-
 main #info .container {
   background-image: linear-gradient(315deg, #f5d020 0%, #f55c03 74%);
   border-radius: 15px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
-
 main #info .container img {
   width: 550px;
 }
-
 main #info .container p {
   line-height: 1.5;
 }
@@ -65,23 +59,19 @@ main #info .container p {
 footer {
   background-color: #473f49;
   color: #e1d9ee;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
-
 footer h4 {
   margin: 0;
 }
-
 footer .imagenPrincipal-footer img {
   width: 50px;
 }
-
 footer .imagenSecundaria-footer img {
   width: 30px;
   height: 30px;
-  opacity: .3;
+  opacity: 0.3;
 }
-
 footer .imagenSecundaria-footer img:hover {
   opacity: 1;
 }
@@ -92,7 +82,6 @@ footer .imagenSecundaria-footer img:hover {
   width: 225px;
   opacity: 0.7;
 }
-
 #discos img:hover {
   opacity: 1;
   transform: translate(0px, -10px);
@@ -105,11 +94,9 @@ footer .imagenSecundaria-footer img:hover {
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
 }
-
 #tour table .table--city {
   color: #f30e07;
 }
-
 #tour table .table--sale a {
   background-color: #4b9945;
   color: white;
@@ -119,7 +106,6 @@ footer .imagenSecundaria-footer img:hover {
   letter-spacing: 1px;
   transition: 0.7s;
 }
-
 #tour table .table--sale a:hover {
   background-color: #eedb5e;
   color: #4b9945;
@@ -136,9 +122,8 @@ footer .imagenSecundaria-footer img:hover {
 /* Fin HTML Noticias */
 /* HTML Form*/
 #form {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
-
 #form .contenedor {
   max-width: 520px;
   margin: 0 auto;
@@ -170,7 +155,6 @@ footer .imagenSecundaria-footer img:hover {
     border: none;
   }
 }
-
 @media only screen and (max-width: 990px) {
   .container-fluid {
     width: 50% !important;
@@ -180,7 +164,6 @@ footer .imagenSecundaria-footer img:hover {
     text-align: center;
   }
 }
-
 @media only screen and (max-width: 480px) {
   footer div {
     flex-direction: column;
@@ -193,6 +176,4 @@ footer .imagenSecundaria-footer img:hover {
     margin: 0;
   }
 }
-
-/* Responsive */
-/*# sourceMappingURL=style.css.map */
+/* Responsive *//*# sourceMappingURL=style.css.map */

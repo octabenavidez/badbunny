@@ -1,10 +1,12 @@
 /* Inicio del Main */
 
 main{
-    background-image: url(https://worldshottesttour.com/static/df7ee17193510a2cca3f53186f00fe95/ccdb5/BB_BG_2400x3000.webp);
+    background-image: url(https://revistasolsticio.com/wp-content/uploads/2022/02/bad_bunny_llega_al_estadio_olimpico_con_worldas_hottest_tour_-1.jpg);
     background-position: center;
     background-repeat: no-repeat;
+    object-fit: cover;
     background-size: cover;
+    min-height: 30rem;
     #imagenPrincipal img{
         width: 860px;
     }
